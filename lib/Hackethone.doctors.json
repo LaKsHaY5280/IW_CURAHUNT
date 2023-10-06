@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "650c749d2cd8f9b16a33263b"
+  },
+  "dr_id": "",
+  "name": "Dr. Pankaj Walecha",
+  "deg": "MBBS, MS - Orthopaedics",
+  "spec": "Orthopedic surgeon",
+  "exp": "22 Years Experience Overall  (16 years as specialist)",
+  "Cverified": "True",
+  "About": "Orthopaedic surgeon Dr. Pankaj Walecha practises in Karol Bagh, Delhi, and has 22 years of expertise. At the Apollo Spectra Hospitals in Karol Bagh, Delhi, Dr. Pankaj Walecha sees patients. His education at Maharshi Dayanand University in Rohtak included an MBBS in 2001 and an MS in Orthopaedics in 2006. He belongs to the IMA, the Indian Medical Association. High-Risk Wound Care, Heat Therapy Treatment, Foot Pressure/Vascular Assessment, Lower Extremity Wound Care, and Neuropathy Assessment are just a few of the treatments the doctor offers.",
+  "fees": "₹1250",
+  "apt": [
+    {
+      "Morning": "11:00 AM, 11:15 AM, 11:30 AM, 11:45 AM"
+    },
+    {
+      "Afternoon": "12:00 PM, 12:15 PM, 12:30 PM, 12:45 PM, 01:00 PM, 01:15 PM, 01:45 PM"
+    }
+  ],
+  "p_img": "https://drive.google.com/file/d/1Rzjdcg3PVaFizwCAPlWUQZ81Kdjv4dn5/view?usp=drive_link",
+  "practice": "Apollo Spectra Hospitals - Karol Bagh.",
+  "h_id": "",
+  "rating": 4.1,
+  "rank": 5,
+  "surgey": [
+    "Amputation",
+    "Arthroplasty",
+    "ACL Surgery",
+    "Arthroscopic Shoulder Surgery",
+    "Arthroscopy",
+    "Carpal Tunnel Release",
+    "Joint Replacement",
+    "Knee Surgery",
+    "ORIF",
+    "Orthopedic Surgery",
+    "Osteotomy",
+    "Tendon Repair",
+    "Tibia Plating"
+  ],
+  "review": [
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650c74c42cd8f9b16a33263c"
+  },
+  "dr_id": "",
+  "name": "Dr. Glossy Sabharwal",
+  "deg": "MBBS, MD - Radio Diagnosis/Radiology",
+  "spec": "Interventional Radiologist,Radiologist",
+  "exp": "19 Years Experience Overall  (10 years as specialist)",
+  "Cverified": "False",
+  "About": "Glossy Sabharwal, M.D. after earning her MBBS from Punjab's Amritsar Dr. Glossy Sabharwal travelled to America to finish her externship at Cleveland Clinic, which is ranked as the best hospital in the country. She returned to India after gaining expertise in America and earned her MD in Radio-a diagnostics from Nagpur Medical College. She completed a fellowship in Breast Interventional Radiology in May 2013 while on a trip to Paris, France, where she worked as a fellow under Dr. Luc Rottenberg. Since then, she has been employed with Jeewan Mala Hospital.She can be proud of the following accomplishments: International and national conferences with 42 Paper/Poster Presentations and Journal Publications, including Best Paper Award and Best Poster Awards.",
+  "fees": "₹500",
+  "apt": [
+    {
+      "Morning": "11:00 AM, 11:15 AM, 11:30 AM, 11:45 AM"
+    },
+    {
+      "Afternoon": "12:00 PM, 12:15 PM, 12:30 PM, 12:45 PM, 01:00 PM, 01:15 PM, 01:45 PM"
+    }
+  ],
+  "p_img": "https://content.jdmagicbox.com/comp/delhi/n2/011pxx11.xx11.170125045734.a6n2/catalogue/dr-glossy-sabharwal-apollo-spectra-hospitals--karol-bagh-delhi-radiologist-doctors-cxolfta8uk.jpg",
+  "practice": "Apollo Spectra Hospitals - Karol Bagh.",
+  "h_id": "",
+  "rating": 3.9,
+  "surgey": [
+    "Ultrasound/Ultrasonography",
+    "Memography",
+    "Positron Emission Tomography (PET)",
+    "Electrocardiography (ECG)",
+    "Pathology",
+    "CT - Scan",
+    "Magnetic Resonance Imaging (MRI)"
+  ],
+  "review": [
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    }
+  ]
+}]

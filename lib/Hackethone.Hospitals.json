@@ -1,0 +1,430 @@
+[{
+  "_id": {
+    "$oid": "650c66ca386b7beaa3387feb"
+  },
+  "name": "Manipal Hospital",
+  "address": "Palam Vihar Colony, Sector 6 Landmark: Near MTNL Office Dwarka Sector 6, Delhi",
+  "reg": "South West Delhi",
+  "loc": "Dwarka",
+  "time": "12:00 AM - 11:59 PM",
+  "days": "MONDAY-SATURDAY",
+  "fees": "₹900-₹1200",
+  "pay": "Credit Card | Cash | Cheque | Online Payment | Debit Card",
+  "no_amb": 10,
+  "num": {
+    "$numberLong": "8037296914"
+  },
+  "em_num": 1149674967,
+  "about": "The Manipal Hospital in Dwarka, Delhi offers top-notch medical care at an affordable price. This hospital offers impartial healthcare services that are reasonably priced, easily accessible, and reliable. With a fantastic infrastructure and 318 beds, 13 operating rooms, 118 critical care beds, an automated pneumatic chute system, telemedicine, remote monitoring, artificial intelligence, virtual reality, augmented thinking, an electronic medical record, etc., Manipal Hospital in Dwarka is well-equipped. This hospital aims to be a 'Digital Hospital' with seamless integration and paperless services.",
+  "no_dr": 10,
+  "no_bed": 318,
+  "l_dr": [
+    {
+      "name": "Dr. Vikram  Gagneja",
+      "spec": "Pediatrician"
+    },
+    {
+      "name": "Dr. Yashica  Gudesar",
+      "spec": "Gynecologist"
+    },
+    {
+      "name": "Dr. Vineet Kumar Surana",
+      "spec": "Endocrinologist"
+    },
+    {
+      "name": "Dr. Anil Laul",
+      "spec": "General Physician"
+    },
+    {
+      "name": "Dr. Peush Bajpai",
+      "spec": "Hematologic Oncologist"
+    },
+    {
+      "name": "Dr. Rajeev Verma",
+      "spec": "Orthopedic surgeon"
+    },
+    {
+      "name": "Dr. Vanuli Bajpai",
+      "spec": "Ophthalmologist"
+    },
+    {
+      "name": "Dr. Ashish Vashishth",
+      "spec": "ENT"
+    },
+    {
+      "name": "Dr. Bipin Dubeyr",
+      "spec": "Cardiologist"
+    },
+    {
+      "name": "Dr. Saurabh Pokhariyal",
+      "spec": "Nephrologist"
+    }
+  ],
+  "sevices": [
+    "Vaccination/ Immunization",
+    "Paediatric Critical Care",
+    "General Paediatric",
+    "Nutritional Assessment",
+    "Paediatrics critical care",
+    "Rheumatology",
+    "Anemia Treatment",
+    "ENT",
+    "Emergency",
+    "GENERAL MEDICINE",
+    "Joint injections",
+    "HEAD & NECK SURGERY",
+    "Joint replacement and arthroscopic surgery",
+    "Intra-articular injection",
+    "Ophthalmology",
+    "Orthopaedics & joint replacement surgery",
+    "Joint Pain Management",
+    "Ankylosing spondylitis",
+    "Arthritis Treatment",
+    "Spine surgery",
+    "gout",
+    "vasculitis"
+  ],
+  "amenities": [
+    "Wheel Chair Accessible In Car Parking",
+    "Wheel Chair Accessible Elevator",
+    "Diagnostic center",
+    "Blood banks",
+    "Special nurse service",
+    "5 categories of rooms available - General ward, A/C general ward, Semi-private A/C, Deluxe, Super Delux",
+    "24-hour accident & emergency service",
+    "In-house Pharmacy",
+    "ATM services",
+    "Housekeeping",
+    "Prayer Room"
+  ],
+  "surgery": [
+    "Arthroplasty",
+    "Arthroscopy",
+    "Amniocentesis",
+    "Amputation",
+    "ACL Surgery",
+    "Adenoidectomy",
+    "Arthroscopic Shoulder Surgery",
+    "Bankart Repair",
+    "Cataract Surgery",
+    "Colostomy",
+    "Colposcopy",
+    "Cervical Dilatation",
+    "D&C (Dilation and Curettage)",
+    "Eye Surgery",
+    "Episiotomy",
+    "Endoscopic Surgery",
+    "Elbow Replacement",
+    "Eyelid Surgery",
+    "Earlobe Repair",
+    "Fertility Treatment",
+    "Hysteroscopy",
+    "Hip Replacement",
+    "Ingrown Toenail Surgery",
+    "Knee Surgery",
+    "Limb Lengthening",
+    "Laparoscopic Myomectomy",
+    "Myomectomy",
+    "Oculoplasty",
+    "Orthopedic Surgery",
+    "Ovary Removal",
+    "Scoliosis Surgery",
+    "Salpingo Oopherectomy",
+    "Shoulder Replacement Surgery",
+    "Spinal Fixation Surgery",
+    "Treatment of Cervical Cancer",
+    "Thoracoscopy"
+  ],
+  "rating": 4.3,
+  "rank": 2,
+  "tags": [
+    "Pediatrician",
+    "Gynecologist",
+    "Endocrinologist",
+    "General Physician",
+    "Hematologic Oncologist",
+    "Orthopedic surgeon",
+    "Ophthalmologist",
+    "ENT",
+    "Cardiologist",
+    "Nephrologist"
+  ],
+  "h_id": "",
+  "type": "hospital",
+  "rew": "",
+  "visit": [
+    {
+      "OPD": "24*7"
+    },
+    {
+      "Patient": "7:30 AM - 8 AM and 12 PM - 1 PM and 4 PM - 6 PM"
+    }
+  ],
+  "doctors": [
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    }
+  ],
+  "review": [
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650c65be386b7beaa3387fe8"
+  },
+  "name": "Apollo Spectra Hospitals",
+  "address": "66A/2, New Rohtak Road Landmark: Near Liberty Next to Red Light Karol Bagh, Delhi",
+  "reg": "Central Delhi",
+  "loc": "Karol Bagh",
+  "time": "05:00 AM - 11:55 PM",
+  "days": "MONDAY-SATURDAY",
+  "pay": "Credit Card | Cash | Cheque | Online Payment",
+  "no_amb": 2,
+  "num": {
+    "$numberLong": "18605002244"
+  },
+  "em_num": {
+    "$numberLong": "9599888818"
+  },
+  "about": "The 23-bed Apollo Spectra Hospital in Karol Bagh, Delhi, is a facility with cutting-edge technical medical equipment. The facilities are state-of-the-art and meet worldwide standards for healthcare delivery. To fulfil the purpose of the Apollo, which is 'to bring healthcare of international standards within the reach of every individual,' all of the doctors and non-medical employees collaborate. The Apollo logo honours the fact that nurses are the change agents, pioneers, crusaders, and torchbearers. The Apollo methods of care are built around TLC (Tender Loving Care), and this enchantment still works to give patients a sense of hope, comfort, and warmth. With 12 locations spanning across 9 Indian cities, Apollo Spectra Hospitals is dedicated to achieving and maintaining excellence in education, research, and healthcare for the benefit of humanity.",
+  "no_dr": 10,
+  "no_bed": 23,
+  "l_dr": [
+    {
+      "name": "Dr. Pankaj Walecha",
+      "spec": "Orthopedic surgeon"
+    },
+    {
+      "name": "Dr. Glossy Sabharwal",
+      "spec": "Radiology"
+    },
+    {
+      "name": "Dr. Ashiwini Seth",
+      "spec": "Ophthalmologist"
+    },
+    {
+      "name": "Dr. R. K. Trivedi",
+      "spec": "ENT"
+    },
+    {
+      "name": "Dr. Latika Bhalla",
+      "spec": "Pediatrician"
+    },
+    {
+      "name": "Dr. Jaisom Chopra",
+      "spec": "General Surgeon"
+    },
+    {
+      "name": "Dr. Arush Sabharwal",
+      "spec": "Bariatric Surgeon"
+    },
+    {
+      "name": "Dr. Nikunj Bansal",
+      "spec": "Laparoscopic Surgeon"
+    },
+    {
+      "name": "Dr. Pankaj Kumar",
+      "spec": "General Physician"
+    },
+    {
+      "name": "Dr. Shivani Sabharwal",
+      "spec": "Gynecologist"
+    }
+  ],
+  "sevices": [
+    "Laparoscopy Hysterectomy",
+    "Laparoscopic Myomectomy",
+    "Laparoscopic Gynaecology",
+    "Gynae Problems",
+    "Laparoscopic Surgery (Obs & Gyn)",
+    "Bariatric Surgery",
+    "ENT",
+    "Obstetrics & Gynaecology",
+    "GENERAL MEDICINE",
+    "Laparoscopic Surgery",
+    "HEAD & NECK SURGERY",
+    "Joint replacement and arthroscopic surgery",
+    "Laparoscopy, endoscopy and laser coloproctology",
+    "Ophthalmology",
+    "Orthopaedics & joint replacement surgery",
+    "Pain management",
+    "Physiotherapy",
+    "Radiology",
+    "Spine surgery"
+  ],
+  "amenities": [
+    "Wheel Chair Accessible In Car Parking",
+    "Wheel Chair Accessible Elevator",
+    "Diagnostic center",
+    "Blood banks",
+    "24-hour accident & emergency service",
+    "In-house Pharmacy",
+    "ATM services",
+    "Housekeeping",
+    "Prayer Room"
+  ],
+  "surgery": [
+    "Arthroplasty",
+    "Arthroscopy",
+    "Amniocentesis",
+    "Amputation",
+    "ACL Surgery",
+    "Adenoidectomy",
+    "Arthroscopic Shoulder Surgery",
+    "Bankart Repair",
+    "Cataract Surgery",
+    "Cyst Removal",
+    "Colostomy",
+    "Colposcopy",
+    "Cervical Dilatation",
+    "D&C (Dilation and Curettage)",
+    "Eye Surgery",
+    "Episiotomy",
+    "Endoscopic Surgery",
+    "Elbow Replacement",
+    "Eyelid Surgery",
+    "Earlobe Repair",
+    "Fertility Treatment",
+    "Hernia Surgery",
+    "Hysteroscopy",
+    "Hernioplasty",
+    "Hip Replacement",
+    "Ileostomy",
+    "Ingrown Toenail Surgery",
+    "Knee Surgery",
+    "Laparotomy",
+    "Lipoma Removal",
+    "Limb Lengthening",
+    "Laparoscopic Myomectomy",
+    "Microlaryngeal Surgery ",
+    "Oculoplasty",
+    "Orthopedic Surgery",
+    "Ovary Removal",
+    "Polypectomy",
+    "Scoliosis Surgery",
+    "Salpingo Oopherectomy",
+    "Shoulder Replacement Surgery",
+    "Spinal Fixation Surgery",
+    "Treatment of Cervical Cancer",
+    "Thyroplasty",
+    "Thyroid Surgery",
+    "Vasectomy",
+    "Varicose Veins Treatment"
+  ],
+  "rating": 4,
+  "tags": [
+    "Orthopedic surgeon",
+    "Radiology",
+    "Ophthalmologist",
+    "ENT",
+    "Pediatrician",
+    "General Surgeon",
+    "Bariatric Surgeon",
+    "Laparoscopic Surgeon",
+    "General Physician",
+    "Gynecologist"
+  ],
+  "h_id": "",
+  "rew:[]": "",
+  "visit": "[{\"OPD\":\"8 AM - 8 PM\"},{\"Patient\":\"10 AM - 12 PM and 5 PM - 7 PM},{\"ICU\":\"11 AM - 12 PM and 5 PM - 6 PM\"}]",
+  "type": "hospital",
+  "rank": "9",
+  "fees": "₹500-₹1500",
+  "doctors": [
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    },
+    {
+      "dr_id": ""
+    }
+  ],
+  "review": [
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    }
+  ]
+}]

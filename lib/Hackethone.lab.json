@@ -1,0 +1,179 @@
+[{
+  "_id": {
+    "$oid": "650d97026d61b4ed51a10be3"
+  },
+  "name": "Cee Dee Diagnostics Pvt Ltd",
+  "no": "08105051357",
+  "rating": 4.2,
+  "reg": "South West Delhi",
+  "about": "The New Delhi-based Cee Dee Diagnostics Pvt Ltd has long been regarded as one of the finest diagnostic facilities. Because they have consistently upheld an extraordinary level of service quality, they have been able to sustain competitive advantages even in a highly competitive climate. Undoubtedly, this is the end of the road for everyone looking for anything—from their qualified staff to their astute eye for upholding consumer pleasure. This is regarded as one of the main causes of their enormous consumer base.",
+  "loc": "Dwarka",
+  "time": [
+    {
+      "MON - SAT": "08:00 AM - 08:00 PM "
+    },
+    {
+      "SUN": "08:00 AM - 02:00 PM"
+    }
+  ],
+  "address": "RZ 88/J, Main Road, Palam Colony, Delhi - 110045 (Opposite Dwarka Flyover Pillar Number 34 & Near Chaturbhuj Medical Store).",
+  "amenities": [
+    "Wheel Chair Seating Services",
+    "Wheel Chair Accessible Entrance And Exit",
+    "Wifi Available"
+  ],
+  "Services": [
+    "Blood Cancer Check Up",
+    "Health Checkup Packages",
+    "Blood Group",
+    "Pre Employment Checkup Packages",
+    "Cardiac CT Scan",
+    "Abdominal and Pelvic USG",
+    "Health Packages"
+  ],
+  "Tests": [
+    "Transvaginal Ultrasound",
+    "Somatosensory Evoked Potential (SSEP)",
+    "CT Scan And MRI",
+    "Breast Ultrasound",
+    "Hormone Testing",
+    "Prenatal Check Up Services Available",
+    "HIV (Human Immunodeficiency Virus)",
+    "Allergy Testing",
+    "Lung Function Tests",
+    "Arthritis Test",
+    "Kidney Function",
+    "Heart Attack Test",
+    "Liver Function Test",
+    "Magnetic Resonance Imaging",
+    "TB Test",
+    "Transvaginal Sonography"
+  ],
+  "img": "https://drive.google.com/file/d/1nHc-9ixHnn_vrIZVRmK22vY0C_MTe72E/view?usp=sharing",
+  "rank": 7,
+  "review": [
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650da7c66d61b4ed51a10be4"
+  },
+  "name": "Dr Lal Pathlabs",
+  "no": "07419873408",
+  "rating": 4.6,
+  "reg": "Central Delhi",
+  "about": "An Indian pathology lab with NABL certification is Dr. Lal PathLabs. Additionally, it is one of the few Indian laboratories to be certified by ISO 9001 and approved by the College of American Pathologists (CAP). The Delhi-based business provides a wide range of tests on blood, urine, and other bodily viscera. More than 19,000 people do so every day. This lab offers home sample collection in all of India's major cities. Absolutely True Report.",
+  "loc": "Karol Bagh",
+  "time": [
+    {
+      "MON - SAT": "08:00 AM - 08:00 PM "
+    },
+    {
+      "SUN": "08:00 AM - 02:00 PM"
+    }
+  ],
+  "address": "Dr Lal Pathlabs Number 52/26 Ground Floor, Ramjas Road, Karol Bagh, Delhi - 110005",
+  "amenities": [
+    "Wheel Chair Seating Services",
+    "Wheel Chair Accessible Entrance And Exit",
+    "Wifi Available",
+    "E-Wallets Accepted"
+  ],
+  "Services": [
+    "Breast Cancer Screening",
+    "Health Checkup Packages",
+    "Cordocentesis",
+    "Papanicolaou (PAP) Collection",
+    "Blood Group",
+    "Pre Employment Checkup Packages",
+    "CGHS Empanelled",
+    "Cardiac CT Scan",
+    "Charitable",
+    "Diagnostic And Pathology",
+    "Anemia Check Up",
+    "24 Hours Open",
+    "Electromyography (EMG)",
+    "Health Packages"
+  ],
+  "Tests": [
+    "Transvaginal Ultrasound",
+    "Coronary Angiogram",
+    "Somatosensory Evoked Potential (SSEP)",
+    "CT Scan And MRI",
+    "Breast Ultrasound",
+    "Hormone Testing",
+    "Prenatal Check Up Services Available",
+    "HIV (Human Immunodeficiency Virus)",
+    "Allergy Testing",
+    "Micro Biology",
+    "Antenatal Sonography",
+    "Histopathology",
+    "Peripheral limbs Doppler",
+    "Nerve Conduction Study (NCS)",
+    "Hormone Testing",
+    "Doppler With 3d And 4d Imaging Services",
+    "Serology",
+    "Preimplantation Genetic Diagnosis",
+    "Bleeding Disorders Check Up",
+    "Lipid Profile",
+    "Renal Doppler",
+    "Brainstem Auditory Evoked Response",
+    "Ultrasonography Prostate",
+    "Lung Function Tests",
+    "Arthritis Test",
+    "Kidney Function",
+    "Heart Attack Tets",
+    "Interventional Diagnostic",
+    "Bone Mineral Density",
+    "Liver Function Test",
+    "Magnetic Resonance Imaging",
+    "TB Test",
+    "Transvaginal Sonography"
+  ],
+  "img": "https://content.jdmagicbox.com/mumbai/x8/022pxx22.xx22.120404160619.e1x8/logo/8b81869849795eacb86a518a488390b7.jpg",
+  "rank": 2,
+  "review": [
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    },
+    {
+      "rev_id": ""
+    }
+  ]
+}]

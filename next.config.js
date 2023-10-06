@@ -1,4 +1,16 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+/** @type {import('next').nextconfig} */
+const nextconfig = {
+  experimental: {
+    serverActions: true,
+    serverComponentsExternalPackages: ["mongoose"],
+  },
+  images: {
+    domains: [
+      "content.jdmagicbox.com",
+      "images1-fabric.practo.com",
+      "drive.google.com",
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextconfig;
