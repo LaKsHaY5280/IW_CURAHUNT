@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "lucide-react": "^0.284.0",
+    "mongodb-client-encryption": "^2.9.0",
     "mongoose": "^7.5.4",
     "next": "13.5.4",
     "react": "^18",

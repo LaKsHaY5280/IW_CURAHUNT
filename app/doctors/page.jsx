@@ -7,16 +7,15 @@ import { ShieldCheck, SlidersHorizontal, X } from "lucide-react";
 import Image from "next/image";
 import { getAllDoctorData } from "@/lib/actions/Doctors.actions";
 import Link from "next/link";
-import { getAllHospitalData } from "@/lib/actions/Hospitals.action";
 
 const page = () => {
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getAllHospitalData();
+      const data = await getAllDoctorData();
       setDoctors(data);
-      //   console.log(data);
+      console.log(data);
     };
 
     fetchData();
@@ -77,7 +76,7 @@ const page = () => {
             return (
               <Link
                 key={item._id}
-                href={`/hospitals/${item._id}`}
+                href={`/doctors/${item._id}`}
                 className=" doctor-cards"
               >
                 <div className="main-card">
@@ -106,12 +105,12 @@ const page = () => {
                     <div className="doctor-detail">
                       <h2>{item.name}</h2>
                       <div className="detail">
-                        <span>{item.address}</span>
+                        <span>{item.deg}</span>
                         <div class="address">
-                          <p>{item.fees}</p>
+                          <p>{item.spec}</p>
                         </div>
                         <div class="fees">
-                          <p>{item.no_dr} of Doctors</p>
+                          <p>{item.exp}</p>
                         </div>
                       </div>
                     </div>

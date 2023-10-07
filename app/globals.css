@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --var1: #0c4c47;
+  --var2: hsl(175, 1, 0);
+  --var3: #d1f1f1;
+}
+body{
+  @apply overflow-x-hidden;
+}
+
 .search {
     @apply bg-teal-900 flex justify-around items-center gap-10;
 }
@@ -31,26 +40,32 @@
 }
 
 .list {
- @apply flex flex-col items-start justify-center gap-10 py-5; 
+ @apply flex flex-col items-start justify-center gap-10 py-5 overflow-hidden max-w-full; 
 }
 
-.list > h2 {
-    @apply text-4xl px-5 font-bold;
-   }
-   
-.top {
-    @apply py-2 px-5 flex justify-center items-center gap-10 overflow-hidden;
+.list > div > h2 {
+    @apply text-4xl px-5 font-bold py-2 max-w-full;
+  }   
+
+
+.top::-webkit-scrollbar {
+  display: none;
 }
+
+.top {
+    @apply px-5 w-[100vw] flex justify-start items-center gap-10 overflow-x-scroll scroll-smooth ;
+}
+
 
 .topcard{
-    @apply border border-teal-300 bg-teal-800 rounded-xl flex flex-col justify-center items-center gap-10 text-slate-100 h-96 w-72 ;
+    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-xl flex flex-col justify-center items-center gap-10 text-slate-100 h-96 w-72 ;
 }
 
 .topcard > div{
-  @apply rounded-full;
+  @apply rounded-lg w-32 h-32;
 }
 .topcard img{
-    @apply rounded-full;
+    @apply rounded-lg w-full h-full;
 }
 
 .topcard div:nth-child(2){
@@ -68,6 +83,14 @@
 .topcard span:nth-child(1){
   @apply text-xl font-semibold ;
 }
+
+.app__gallery-images_arrows {
+  @apply w-full flex justify-between items-center  p-4 bottom-[5%];
+}
+.gallery__arrow-icon {
+  @apply text-teal-300 text-[2rem] cursor-pointer rounded-[5px] bg-black;
+}
+
 
 .app__footerOverlay {
     @apply w-full h-full z-[-1] flex flex-col absolute;
@@ -225,3 +248,321 @@
   transform: none;
 }
 
+
+.leftsidebar {
+  @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-hidden  pb-5 pt-5 max-md:hidden bg-teal-900 ;
+}
+
+.leftsidebar_link {
+  @apply relative flex justify-center items-center gap-4 rounded-xl bg-teal-700 text-center py-3 px-5 text-slate-100 hover:text-teal-100 border border-teal-200;
+}
+
+@layer utilities {
+  .css-invert {
+    @apply invert-[50%] brightness-200;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #09090a;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+}
+
+.hospital_profile{
+  @apply bg-teal-900 flex border-b-4 border-teal-400;
+}
+
+.hospital_container{
+  @apply w-full flex flex-col justify-start items-center gap-10 p-10;
+}
+
+.main_profile{
+  @apply flex justify-start items-center gap-10 w-full p-10 rounded-3xl max-md:flex-col;
+}
+
+.main_profile > div:nth-child(1){
+  @apply bg-teal-900 rounded-3xl h-52 w-[30%] ;
+}
+.main_profile > div:nth-child(1) img{
+  @apply w-full h-full rounded-3xl;
+}
+
+.main_profile > div:nth-child(2){
+  @apply  flex flex-col justify-center items-start gap-3;
+}
+
+.main_profile > div:nth-child(2) > span:nth-child(1){
+  @apply text-teal-900 font-bold text-3xl flex justify-start items-center;
+}
+
+.main_profile > div:nth-child(2) > span:nth-child(1) > span:nth-child(1){
+  @apply text-teal-950 font-bold text-xl pl-5 flex justify-start items-center;
+}
+
+.hospital_container div{
+  @apply bg-white rounded-3xl;
+}
+
+.h_p_nav {
+  @apply flex flex-col justify-start items-center gap-10 w-full p-10 rounded-3xl;
+}
+
+.h_p_nav li{
+  @apply bg-teal-600 text-xl max-md:text-lg max-[500px]:text-sm text-slate-900 mx-4 border p-0.5 border-teal-500 rounded-2xl;
+}
+
+.h_p_nav li div {
+  @apply p-2 rounded-2xl hover:bg-teal-600 hover:text-slate-100;
+}
+
+.infocard{
+  @apply  flex flex-col justify-start items-start gap-10 w-full p-10 rounded-3xl;
+}
+
+.infocard > div:nth-child(1) {
+  @apply text-3xl;
+}
+
+.infocard > div:nth-child(2) {
+  @apply text-xl flex flex-wrap justify-start items-start gap-5;
+}
+
+.infocard > div:nth-child(2) span {
+  @apply text-xl max-md:text-lg max-[500px]:text-sm text-slate-900 cursor-pointer m-1 border p-2 border-teal-500 rounded-2xl;
+}
+
+.reviewcard {
+  @apply  flex flex-col justify-center items-center gap-10 w-full p-10 rounded-3xl;
+}
+.reviewcard > div{
+  @apply  flex justify-start items-start gap-10 w-full rounded-3xl;
+}
+
+.reviewcard > div > div {
+  @apply  flex flex-col justify-center items-start gap-10 w-1/4 p-10 rounded-3xl;
+}
+
+.reviewcard > div > div:nth-child(2) {
+  @apply  flex flex-col justify-center items-start gap-10 w-full p-10 rounded-3xl;
+}
+.reviewcard > div:nth-child(2) {
+  @apply content-[""] rounded w-full !h-1 bg-teal-900 opacity-25 ;
+}
+
+.gal{
+  @apply bg-teal-900 rounded-3xl w-full h-auto flex flex-wrap  justify-center  items-center ;
+}
+
+.gal div {
+  @apply bg-teal-900 rounded-3xl h-52 w-[20%] flex flex-wrap  justify-center  items-start m-2;
+}
+
+.gal img{
+  @apply w-full h-full rounded-3xl;
+}
+
+
+#reviews {
+  @apply flex flex-col justify-center items-center ;
+}
+
+#reviews > div:last-child{
+  @apply flex justify-center items-center w-2/4 bg-teal-600 text-xl max-md:text-lg max-[500px]:text-sm text-slate-900 mx-4 mb-4 border p-0.5 border-teal-500 rounded-2xl;
+}
+
+#reviews > div:last-child > div {
+  @apply p-2 rounded-2xl hover:bg-teal-600 w-full text-center flex justify-center items-center hover:text-slate-100;
+}
+
+
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.filters {
+  @apply flex flex-col justify-center items-center text-[color:var(--var3)] mx-0 my-5;
+}
+.filters span {
+  @apply text-[1.4rem];
+}
+.filter span {
+  @apply text-[1.2rem];
+}
+.filter {
+  @apply flex flex-col justify-center items-center gap-[15px] mt-[15px];
+}
+.rating-filter,
+.price-filter,
+.Experience-filter {
+  @apply flex flex-col justify-center items-center;
+}
+.rating-filter select,
+.price-filter select,
+.Experience-filter select {
+  @apply w-40 h-[1.6rem] text-[0.9rem] mt-[5px] rounded-[10px] border-[none] text-teal-900;
+  outline: none;
+}
+.filters hr {
+  @apply w-4/5 text-[color:var(--var3)];
+}
+/*subsection1 filter section styling end here*/
+/*subsection1 more styling*/
+.more {
+  @apply flex justify-center items-center;
+}
+.more ul {
+  @apply flex flex-col justify-center items-center gap-[25px] text-[1.1rem];
+  list-style: none;
+}
+.more ul li {
+  @apply w-full text-center px-5 py-[5px] rounded-[5px] hover:bg-[#7baeae];
+}
+
+.search-section {
+  @apply flex justify-between items-center w-full bg-teal-900 h-[230px] overflow-hidden;
+}
+.search-section img {
+  @apply h-36;
+}
+.search-bar {
+  @apply flex justify-center items-center flex-wrap gap-2.5 bg-[#7baeae] px-[50px] py-10 rounded-[10px] scale-90;
+}
+.search-bar1,
+.search-bar2 {
+  @apply bg-[white] w-[350px] flex justify-center items-center ml-2.5 px-2.5 py-0 rounded-[10px];
+}
+.search-bar1 input,
+.search-bar2 input {
+  @apply w-full h-8 pl-2 rounded-[10px] border-[none];
+  outline: none;
+}
+.filter-icon {
+  @apply text-[white] scale-100;
+}
+.search-bar1 svg {
+  @apply text-[black];
+}
+.search-btn {
+  @apply bg-[#20BB9B] text-[1.1rem] text-[white] absolute bottom-[-15px] transition-all duration-[0.5s] ease-[ease] cursor-pointer px-5 py-2 rounded-[10px] border-[none] left-[420px] active:scale-105;
+  outline: none;
+}
+
+.search-section > div:nth-child(2) {
+  @apply relative;
+}
+
+
+.searchbar_container{
+  @apply w-full flex justify-start items-start border-b-4 border-teal-400;
+}
+
+.doctor-cards {
+  @apply w-full flex flex-col justify-center items-center gap-10 mt-[50px];
+}
+.main-card {
+  @apply flex flex-col w-fit bg-[white] rounded-[10px] border-2 border-solid border-[black] border-[none];
+}
+.upper-section {
+  @apply flex gap-2.5;
+}
+.doctor-pic {
+  @apply flex justify-center items-center relative h-[200px] w-[300px];
+}
+.doctor-img {
+  @apply h-[150px] w-[200px] rounded-[5px];
+}
+.doctor-img img {
+  @apply h-[150px] w-[200px] rounded-[5px];
+}
+.doctor-verify {
+  @apply absolute rounded-[25px] right-2.5 top-[15px];
+}
+.doctor-verify img {
+  @apply h-[30px] rounded-[25px];
+}
+.doctor-detail {
+  @apply flex flex-col justify-center;
+}
+.doctor-detail h2 {
+  @apply text-[color:var(--var1)] text-[1.2rem];
+}
+.detail {
+  @apply text-[0.9rem] flex flex-col;
+}
+.address {
+  @apply mt-2.5;
+}
+.address p {
+  @apply w-[70%];
+}
+.fees {
+  @apply mt-2.5;
+}
+.main-card hr {
+  @apply bg-[color:var(--var3)] h-0.5 w-[90%] border-[none];
+}
+.hr- {
+  @apply flex justify-center items-center;
+}
+.lower-section {
+  @apply flex justify-between items-center m-2.5;
+}
+.lower-section a {
+  @apply no-underline text-[color:var(--var1)] text-base;
+}
+.book-btn {
+  @apply bg-[#20bb9b] cursor-pointer shadow-[rgba(0,0,0,0.24)_0px_3px_8px_0px] px-5 py-[5px] rounded-[20px] border-[none] active:scale-90;
+  outline: none;
+}
+.book-btn a {
+  @apply text-base text-[color:var(--var3)];
+}
+
+.cardholder{
+  @apply flex justify-center items-center flex-col w-[inherit];
+}
+
+.cardsplace{
+  @apply flex justify-center items-center w-full flex-col pb-5;
+}
+
+.details span {
+  @apply flex flex-1 justify-center items-center w-60 flex-col mx-5;
+}
+
+.surgery-list {
+  @apply flex flex-col justify-center items-center gap-5 mx-0 my-[30px];
+}
+.surgery-list-heading {
+  @apply flex justify-center items-center;
+}
+.surgery-list-heading span {
+  @apply text-[2rem] text-[color:var(--var1)];
+}
+.surgery-img {
+  @apply flex justify-center items-center flex-wrap w-[60%] gap-14;
+}
+.surgery_image {
+  @apply flex flex-col justify-center items-center gap-[5px];
+}
+.surgery_image span {
+  @apply text-[1.3rem] text-[color:var(--var1)];
+}
+.surgery-img img {
+  @apply border-[color:var(--var1)] h-[120px] w-[120px] rounded-[50%] border-2 border-solid;
+}

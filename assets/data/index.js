@@ -11,18 +11,7 @@ export const navlinks = [
     url: "/surgeries",
     label: "Surgeries",
   },
-  {
-    url: "/lab_test",
-    label: "Lab Test",
-  },
-  {
-    url: "/verified",
-    label: "Verified",
-  },
-  {
-    url: "/remedies",
-    label: "Remedies",
-  },
+
 ];
 
 export const sidebarLinks = [
@@ -51,3 +40,35 @@ export const sidebarLinks = [
     label: "Amenities",
   },
 ];
+
+
+export const sidebarLinksd = [
+  {
+    route: "#overview",
+    label: "Overview",
+  },
+  {
+    route: "#surgeries",
+    label: "Surgeries",
+  },
+  {
+    route: "#reviews",
+    label: "Reviews",
+  },
+];
+
+export const sidebarLinksdl = [
+  {
+    route: "#overview",
+    label: "Overview",
+  },
+  {
+    route: "#surgeries",
+    label: "Surgeries",
+  },
+  {
+    route: "#reviews",
+    label: "Reviews",
+  },
+];
+

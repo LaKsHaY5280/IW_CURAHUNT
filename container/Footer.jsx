@@ -3,6 +3,7 @@ import FooterOverlay from "@/components/FooterOverlay";
 import Newsletter from "@/components/Newsletter";
 import Image from "next/image";
 import { doctor1 } from "@/assets";
+import Link from "next/link";
 
 const Footer = () => (
   <div className="app__footer section__padding">
@@ -16,33 +17,33 @@ const Footer = () => (
         <p className="p__opensans">Manish Gupta - +91 9205055941</p>
         <p className="p__opensans">Viraj Ansari - +91 7678419189</p>
         <p className="p__opensans">Sneha - +91 9625609632</p>
+        <p className="p__opensans">
+          <Link href="/about">About Us</Link>
+        </p>
+        <p className="p__opensans">
+          <Link href="/policy">Privacy Policy</Link>
+        </p>
       </div>
       <div className="app__footer-links_logo">
-        {/* <Image src={doctor1} alt="footer_logo" /> */}
         <p className="p__opensans">
-          &quot;The best way to find yourself is to lose yourself in the service
-          of others.&quot;
+          &quot;Where Healthcare and Knowledge Come Together&quot;
         </p>
-        {/* <Image
-          src={doctor1}
-          alt="spoon"
-          className="spoon"
-          style={{ marginTop: 15 }}
-        /> */}
         <div className="app__footer-links_icons flex justify-center items-center">
-          <FiInstagram />
+          <Link href={"https://instagram.com/curahunt?igshid=MzMyNGUyNmU2YQ=="}>
+            <FiInstagram />
+          </Link>
         </div>
       </div>
       <div className="app__footer-links_work">
         <h1 className="app__footer-headtext">Partners</h1>
-        <p className="p__opensans">Max Hospital</p>
+        <p className="p__opensans">Cura Hospital</p>
         <p className="p__opensans">DH Labs</p>
         <p className="p__opensans">Cura Foundation</p>
         <p className="p__opensans">CuraHunt medical</p>
       </div>
     </div>
     <div className="footer__copyright">
-      <p className="p__opensans">2021 Gerícht. All Rights reserved.</p>
+      <p className="p__opensans">2023 CuraHunt. All Rights reserved.</p>
     </div>
   </div>
 );

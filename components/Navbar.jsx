@@ -1,21 +1,30 @@
-// import { l } from "@/assets/images";
+"use client";
+
 import Image from "next/image";
 import { navlinks } from "@/assets/data";
 import Hamburger from "./hamburger";
 import Link from "next/link";
 import { logo } from "@/assets";
 import { UserCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+
+  const handleImageClick = () => {
+    router.push("/");
+  };
+
   return (
     <div className="  p-5 flex flex-1 justify-center items-center max-[500px]:p-2 ">
       <div className=" flex flex-1 justify-between items-center">
         <div className=" flex justify-start items-center">
           <Image
             src={logo}
-            alt="L"
+            alt="Logo"
             width={110}
             height={110}
+            onClick={handleImageClick}
             className=" -mt-2 max-[500px]:w-[20px] max-[500px]:h-[20px]"
           />
           <div className=" flex">
