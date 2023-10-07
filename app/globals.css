@@ -58,7 +58,7 @@ body{
 
 
 .topcard{
-    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-xl flex flex-col justify-center items-center gap-10 text-slate-100 h-96 w-72 ;
+    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-xl flex flex-col justify-center items-center gap-10 text-slate-100 h-96 w-72;
 }
 
 .topcard > div{
