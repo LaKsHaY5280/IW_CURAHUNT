@@ -20,7 +20,7 @@ import ampu from "./images/ampu.png";
 import anal from "./images/anal.png";
 import arth from "./images/arth.png";
 import cata from "./images/cata.png";
-import cerv from "./images/cerv.png";
+import cerv from "./images/Cerv.png";
 import colo from "./images/colo.png";
 import endo from "./images/endo.png";
 import gall from "./images/gall.png";
