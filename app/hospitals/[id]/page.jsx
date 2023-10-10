@@ -72,16 +72,28 @@ const page = ({ data }) => {
         </div>
         <div className="h_p_nav" id="overview">
           <ul>
-            <li onClick={() => handleClick("About")}>
+            <li
+              onClick={() => handleClick("About")}
+              className={currentContent === "About" ? "active" : ""}
+            >
               <div>About</div>
             </li>
-            <li onClick={() => handleClick("Payment")}>
+            <li
+              onClick={() => handleClick("Payment")}
+              className={currentContent === "Payment" ? "active" : ""}
+            >
               <div>Payment</div>
             </li>
-            <li onClick={() => handleClick("Photos")}>
+            <li
+              onClick={() => handleClick("Photos")}
+              className={currentContent === "Photos" ? "active" : ""}
+            >
               <div>Photos</div>
             </li>
-            <li onClick={() => handleClick("Emergency")}>
+            <li
+              onClick={() => handleClick("Emergency")}
+              className={currentContent === "Emergency" ? "active" : ""}
+            >
               <div>Emergency</div>
             </li>
           </ul>
@@ -108,6 +120,7 @@ const page = ({ data }) => {
             <div className=" text-2xl">{hospitalData?.em_num}</div>
           )}
         </div>
+
         <div id="surgeries">
           <Infocard title="Surgeries" data={hospitalData?.surgery} />
         </div>
