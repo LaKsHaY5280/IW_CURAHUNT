@@ -12,11 +12,31 @@ const Footer = () => (
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
-        <p className="p__opensans">Faisal Mujahid - +91 9667080672</p>
-        <p className="p__opensans">Lakshay Goyal - +91 9910470485</p>
-        <p className="p__opensans">Manish Gupta - +91 9205055941</p>
-        <p className="p__opensans">Viraj Ansari - +91 7678419189</p>
-        <p className="p__opensans">Sneha - +91 9625609632</p>
+        <p className="p__opensans">
+          <Link href="https://www.linkedin.com/in/faisal-mujahid-745168273/">
+            Faisal Mujahid - LinkedIn
+          </Link>
+        </p>
+        <p className="p__opensans">
+          <Link href="https://www.linkedin.com/in/lakshay-goyal-2a03a4270/">
+            Lakshay Goyal - LinkedIn
+          </Link>
+        </p>
+        <p className="p__opensans">
+          <Link href="https://www.linkedin.com/in/manishgupta31/">
+            Manish Gupta - LinkedIn
+          </Link>
+        </p>
+        <p className="p__opensans">
+          <Link href="https://www.linkedin.com/in/viraj-ansari-114627247/">
+            Viraj - LinkedIn
+          </Link>
+        </p>
+        <p className="p__opensans">
+          <Link href="https://www.linkedin.com/in/sneha-a50163255/">
+            Sneha - LinkedIn
+          </Link>
+        </p>
         <p className="p__opensans">
           <Link href="/about">About Us</Link>
         </p>
