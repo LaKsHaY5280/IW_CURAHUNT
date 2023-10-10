@@ -3,8 +3,8 @@ const Infocard = ({ title, data }) => {
     <div className="infocard">
       <div>{title}</div>
       <div>
-        {data?.map((val) => {
-          return <span key={val}>{val}</span>;
+        {data?.map((val,ind) => {
+          return <span key={ind}>{val}</span>;
         })}
       </div>
     </div>

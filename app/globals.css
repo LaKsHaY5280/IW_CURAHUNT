@@ -62,7 +62,7 @@ body{
 
 
 .topcard{
-    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-xl flex flex-col justify-center items-center gap-5 text-slate-100 h-[28rem] w-80;
+    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-3xl flex flex-col justify-center items-center gap-5 text-slate-100 h-[28rem] w-80;
 }
 
 .topcard > div{
@@ -325,8 +325,16 @@ body{
   @apply flex flex-col justify-start items-center gap-10 w-full p-10 rounded-3xl;
 }
 
+.h_p_nav > div{
+  @apply text-xl max-lg:text-lg max-md:text-sm max-sm:text-xs;
+}
+
+.h_p_nav ul {
+  @apply  w-fit flex justify-around items-center font-medium text-xl max-lg:text-sm max-md:text-sm flex-wrap gap-2;
+}
+
 .h_p_nav li{
-  @apply bg-teal-600 text-xl max-md:text-lg max-[500px]:text-sm text-slate-900 mx-4 border p-0.5 border-teal-500 rounded-2xl;
+  @apply bg-teal-600 text-slate-900 mx-4 p-0.5 border-teal-500 rounded-2xl;
 }
 
 .h_p_nav li div {
@@ -338,7 +346,7 @@ body{
 }
 
 .infocard > div:nth-child(1) {
-  @apply text-3xl;
+  @apply text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg;
 }
 
 .infocard > div:nth-child(2) {
@@ -346,7 +354,7 @@ body{
 }
 
 .infocard > div:nth-child(2) span {
-  @apply text-xl max-md:text-lg max-[500px]:text-sm text-slate-900 cursor-pointer m-1 border p-2 border-teal-500 rounded-2xl;
+  @apply text-xl max-lg:text-lg max-md:text-sm max-sm:text-xs text-slate-900 cursor-pointer m-1 border p-2 border-teal-500 rounded-3xl;
 }
 
 .reviewcard {

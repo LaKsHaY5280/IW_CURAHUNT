@@ -71,7 +71,7 @@ const page = ({ data }) => {
           )}
         </div>
         <div className="h_p_nav" id="overview">
-          <ul className=" w-fit flex justify-start items-center ">
+          <ul>
             <li onClick={() => handleClick("About")}>
               <div>About</div>
             </li>
@@ -111,9 +111,7 @@ const page = ({ data }) => {
         <div id="surgeries">
           <Infocard title="Surgeries" data={hospitalData?.surgery} />
         </div>
-        <div>
-          <Infocard title="Speciality" data={hospitalData?.tags} />
-        </div>
+        <Infocard title="Speciality" data={hospitalData?.tags} />
         <div id="reviews">
           {hospitalData ? (
             hospitalData.review?.map((val, index) => {
