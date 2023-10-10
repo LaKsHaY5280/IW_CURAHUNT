@@ -12,7 +12,11 @@ body{
 }
 
 .search {
-    @apply bg-teal-900 flex justify-around items-center gap-10;
+    @apply bg-teal-900 flex justify-around items-center gap-10 max-md:p-5;
+}
+
+.search img{
+  @apply max-md:hidden;
 }
 
 .search_container {
@@ -20,15 +24,15 @@ body{
 }
 
 .search_container>h1 {
-    @apply text-white text-3xl font-bold;
+    @apply text-white text-3xl font-bold max-lg:text-xl;
 }
 
 .search_container>div {
-    @apply flex justify-between items-center gap-10;
+    @apply flex justify-between items-center gap-10 max-lg:gap-2;
 }
 
 .map {
-    @apply flex text-sm text-slate-300 ;
+    @apply flex justify-center items-center text-sm text-slate-300 max-lg:text-xs ;
 }
 
 .map h4:nth-child(1) {
@@ -36,7 +40,7 @@ body{
 }
 
 .search_container input {
-    @apply block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+    @apply block w-full rounded-md border-0 py-1.5 pl-7  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
 }
 
 .list {
@@ -58,7 +62,7 @@ body{
 
 
 .topcard{
-    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-xl flex flex-col justify-center items-center gap-10 text-slate-100 h-96 w-72;
+    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-xl flex flex-col justify-center items-center gap-10 text-slate-100 h-[28rem] w-80;
 }
 
 .topcard > div{
@@ -73,7 +77,7 @@ body{
 }
 
 .topcard div:nth-child(3){
-    @apply flex flex-col justify-center items-center gap-5 text-center;
+    @apply w-full flex flex-col justify-center items-center gap-5 text-center;
 }
 
 .topcard span{
@@ -132,7 +136,7 @@ body{
   }
   @media screen and (max-width: 650px) {
     .app__newsletter {
-      @apply px-0 py-8 border-[none];
+      @apply px-8 py-8 border-[none];
     }
   }
   @media screen and (max-width: 300px) {
@@ -388,12 +392,6 @@ body{
   @apply p-2 rounded-2xl hover:bg-teal-600 w-full text-center flex justify-center items-center hover:text-slate-100;
 }
 
-
-/*
-  Based on TailwindCSS recommendations,
-  consider using classes instead of the `@apply` directive
-  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
-*/
 .filters {
   @apply flex flex-col justify-center items-center text-[color:var(--var3)] mx-0 my-5;
 }
