@@ -71,22 +71,20 @@ const page = ({ data }) => {
           )}
         </div>
         <div className="h_p_nav" id="overview">
-          <div className=" flex">
-            <ul className=" w-fit flex justify-start items-center ">
-              <li onClick={() => handleClick("About")}>
-                <div>About</div>
-              </li>
-              <li onClick={() => handleClick("Payment")}>
-                <div>Payment</div>
-              </li>
-              <li onClick={() => handleClick("Photos")}>
-                <div>Photos</div>
-              </li>
-              <li onClick={() => handleClick("Emergency")}>
-                <div>Emergency</div>
-              </li>
-            </ul>
-          </div>
+          <ul className=" w-fit flex justify-start items-center ">
+            <li onClick={() => handleClick("About")}>
+              <div>About</div>
+            </li>
+            <li onClick={() => handleClick("Payment")}>
+              <div>Payment</div>
+            </li>
+            <li onClick={() => handleClick("Photos")}>
+              <div>Photos</div>
+            </li>
+            <li onClick={() => handleClick("Emergency")}>
+              <div>Emergency</div>
+            </li>
+          </ul>
           {currentContent === "About" && <div>{hospitalData?.about}</div>}
           {currentContent === "Payment" && (
             <div className=" text-2xl">{hospitalData?.pay}</div>
