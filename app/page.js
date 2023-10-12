@@ -1,3 +1,4 @@
+import Faq from "@/components/Faq";
 import Header from "@/container/Header";
 import Toplist from "@/container/Toplist";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Header />
       <Toplist />
+      <Faq />
     </main>
   );
 }

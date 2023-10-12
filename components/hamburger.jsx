@@ -14,8 +14,8 @@ const Hamburger = () => {
   };
 
   return (
-    <div role="navigation" className=" pl-5">
-      <div className=" flex justify-end items-center">
+    <div role="navigation" className="pl-5">
+      <div className="flex justify-end items-center">
         <div id="menuToggle">
           <input
             type="checkbox"
@@ -25,11 +25,16 @@ const Hamburger = () => {
           <span></span>
           <span></span>
           <span></span>
-          <ul className=" lg:hidden" id="menu">
+          <ul
+            className={`lg:hidden transition-transform duration-200 ease-in-out transform ${
+              isChecked ? "translate-y-0" : "translate-y-full"
+            }`}
+            id="menu"
+          >
             {navlinks.map((link) => (
               <li key={link.label} onClick={handleInputCheck}>
                 <a
-                  className=" text-teal-700 ham_transition hover:text-teal-900"
+                  className="text-teal-700 ham_transition hover:text-teal-900"
                   onClick={() => router.push(link.url)}
                 >
                   {link.label}

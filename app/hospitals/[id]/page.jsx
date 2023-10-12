@@ -155,10 +155,10 @@ const page = ({ data }) => {
         </div>
         <div id="doctors"></div>
         <div id="services">
-          <Infocard title="services" data={hospitalData?.services} />
+          <Infocard title="Services" data={hospitalData?.services} />
         </div>
         <div id="amenities">
-          <Infocard title="amenities" data={hospitalData?.amenities} />
+          <Infocard title="Amenities" data={hospitalData?.amenities} />
         </div>
       </div>
     </div>

@@ -3,24 +3,31 @@
 import { sidebarLinks, sidebarLinksd, navlinks } from "@/assets/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const LeftSidebar = ({ path }) => {
   const pathname = usePathname();
+  const [currentContent, setCurrentContent] = useState("overview");
+
+  const handleClick = (content) => {
+    setCurrentContent(content);
+  };
 
   return (
-    <section className="custom-scrollbar leftsidebar">
+    <section className="leftsidebar">
       <div className="flex w-full flex-1 flex-col gap-6 px-6">
         {path === "h" &&
           sidebarLinks.map((link) => {
-            const isActive =
-              (pathname.includes(link.route) && link.route.length > 1) ||
-              pathname === link.route;
-
             return (
               <Link
                 href={link.route}
                 key={link.label}
-                className={`leftsidebar_link ${isActive && "bg-teal-900 "}`}
+                onClick={() => handleClick(link.label)}
+                className={
+                  currentContent === link.label
+                    ? " leftsidebar_link active"
+                    : " leftsidebar_link"
+                }
               >
                 <p className="text-light-1 max-md:hidden">{link.label}</p>
               </Link>
@@ -28,15 +35,16 @@ const LeftSidebar = ({ path }) => {
           })}
         {path === "d" &&
           sidebarLinksd.map((link) => {
-            const isActive =
-              (pathname.includes(link.route) && link.route.length > 1) ||
-              pathname === link.route;
-
             return (
               <Link
                 href={link.route}
                 key={link.label}
-                className={`leftsidebar_link ${isActive && "bg-teal-900 "}`}
+                onClick={() => handleClick(link.label)}
+                className={
+                  currentContent === link.label
+                    ? " leftsidebar_link active"
+                    : " leftsidebar_link"
+                }
               >
                 <p className="text-light-1 max-md:hidden">{link.label}</p>
               </Link>
@@ -56,23 +64,12 @@ const LeftSidebar = ({ path }) => {
                   <option value="">2-1</option>
                 </select>
               </div>
-              option
               <div className="price-filter">
                 <span>Price</span>
                 <select name="" id="">
                   <option value="">Select Price range</option>
                   <option value="">High-low</option>
                   <option value="">Low-High</option>
-                </select>
-              </div>
-              <div className="Experience-filter">
-                <span>Experience </span>
-                <select name="" id="">
-                  <option value="">Select Experience level</option>
-                  <option value="">0-1</option>
-                  <option value="">2-4</option>
-                  <option value="">4-5</option>
-                  <option value="">more</option>
                 </select>
               </div>
             </div>

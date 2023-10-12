@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Doctor, Group33, doctor1 } from "@/assets";
+import { Doctor, Group33 } from "@/assets";
 import LeftSidebar from "@/components/Sidebar";
-import { ShieldCheck, SlidersHorizontal, X } from "lucide-react";
+import { BadgeIndianRupee, ShieldCheck, Star, X } from "lucide-react";
 import Image from "next/image";
 import { getAllDoctorData } from "@/lib/actions/Doctors.actions";
 import Link from "next/link";
@@ -15,7 +15,7 @@ const page = () => {
     const fetchData = async () => {
       const data = await getAllDoctorData();
       setDoctors(data);
-      console.log(data);
+      // console.log(data);
     };
 
     fetchData();
@@ -28,104 +28,107 @@ const page = () => {
           <div>
             <Image src={Doctor} alt="Doctor" height={144} />
           </div>
-          <div>
+          <div className="search_container">
             <div className="search-bar">
-              <SlidersHorizontal
-                size={35}
-                color="#0d4c46"
-                strokeWidth={2}
-                absoluteStrokeWidth
-              />
-              <span className="search-bar1">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="search Hospital"
-                />
-                <X
+              <div>
+                <span className="search-bar1">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="search Hospital"
+                  />
+                  <X
+                    size={35}
+                    color="#0d4c46"
+                    strokeWidth={2}
+                    absoluteStrokeWidth
+                  />
+                </span>
+                <span className="search-bar2">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="search Location"
+                  />
+                  <X
+                    size={35}
+                    color="#0d4c46"
+                    strokeWidth={2}
+                    absoluteStrokeWidth
+                  />
+                </span>
+              </div>
+              <div className="search-btn_box">
+                <BadgeIndianRupee
                   size={35}
                   color="#0d4c46"
                   strokeWidth={2}
                   absoluteStrokeWidth
                 />
-              </span>
-              <span className="search-bar2">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="search Location"
-                />
-                <X
+                <button className="search-btn">Search</button>{" "}
+                <Star 
                   size={35}
                   color="#0d4c46"
                   strokeWidth={2}
                   absoluteStrokeWidth
                 />
-              </span>
+              </div>
             </div>
-            <button className="search-btn">Search</button>
           </div>
           <div>
             <Image src={Group33} alt="Group33" height={144} />
           </div>
         </section>
         <div className="cardsplace">
-          {doctors.map((item) => {
+          {doctors.map((item, ind) => {
             return (
-              <Link
-                key={item._id}
-                href={`/doctors/${item._id}`}
-                className=" doctor-cards"
-              >
-                <div className="main-card">
-                  <div className="upper-section">
-                    <div className="doctor-pic">
-                      <div className="doctor-img">
-                        <Image
-                          src={item.p_img}
-                          alt={item.name}
-                          width={200}
-                          height={150}
+              <div key={ind} className="cardbox">
+                <div className="main_profile">
+                  <div>
+                    <Image
+                      src={item.p_img}
+                      alt="profile"
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                  <div>
+                    <span>
+                      {item.name}{" "}
+                      {item.Cverified === true && (
+                        <ShieldCheck
+                          size={20}
+                          color="#0d4c46"
+                          strokeWidth={2}
+                          absoluteStrokeWidth
                         />
-                      </div>
-                      <div className="doctor-verify">
-                        {item.Cverified === true && (
-                          <ShieldCheck
-                            size={20}
-                            color="#0d4c46"
-                            strokeWidth={2}
-                            absoluteStrokeWidth
-                          />
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="doctor-detail">
-                      <h2>{item.name}</h2>
-                      <div className="detail">
-                        <span>{item.deg}</span>
-                        <div class="address">
-                          <p>{item.spec}</p>
-                        </div>
-                        <div class="fees">
-                          <p>{item.exp}</p>
-                        </div>
-                      </div>
-                    </div>
+                      )}
+                      <span className="flex justify-center items-center gap-3 px-5">
+                        {" "}
+                        <Star
+                          size={20}
+                          color="#0d4c46"
+                          strokeWidth={2}
+                          absoluteStrokeWidth
+                        />{" "}
+                        {item.rating}
+                      </span>
+                    </span>
+                    <span>{item.deg}</span>
+                    <span>{item.spec}</span>
+                    <span>{item.exp}</span>
                   </div>
-                  <div className="hr-">
-                    <hr />
-                  </div>
-                  <div className="lower-section">
-                    <Link href="/">Veiw Profile</Link>
-                    <button className="book-btn">
-                      <Link href="/">Book Appointment</Link>
-                    </button>
-                  </div>
+                </div>{" "}
+                <div />
+                <div className="lower-section">
+                  <Link href={`/doctors/${item._id}`}>Veiw Profile</Link>
+                  <button className="book-btn">
+                    <Link href="#">Book Appointment</Link>
+                  </button>
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>

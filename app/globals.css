@@ -11,6 +11,10 @@ body{
   @apply overflow-x-hidden;
 }
 
+main{
+  @apply border-b-4 border-teal-400;
+}
+
 .search {
     @apply bg-teal-900 flex justify-around items-center gap-10 max-md:p-5;
 }
@@ -29,6 +33,10 @@ body{
 
 .search_container>div {
     @apply flex justify-between items-center gap-10 max-lg:gap-2;
+}
+
+.search-btn_box svg{
+  @apply md:!hidden;
 }
 
 .map {
@@ -51,6 +59,9 @@ body{
     @apply text-4xl px-5 font-bold py-2 max-w-full;
   }   
 
+.list > div:nth-child(3){
+  @apply flex justify-center items-center gap-5;
+}
 
 .top::-webkit-scrollbar {
   display: none;
@@ -62,7 +73,7 @@ body{
 
 
 .topcard{
-    @apply px-10 relative border border-teal-300 bg-teal-800 rounded-3xl flex flex-col justify-center items-center gap-5 text-slate-100 h-[28rem] w-80;
+    @apply px-10 relative border border-teal-300 bg-teal-600 rounded-3xl flex flex-col justify-center items-center gap-5 text-slate-100 h-[28rem] w-80;
 }
 
 .topcard > div{
@@ -258,33 +269,13 @@ body{
 }
 
 .leftsidebar_link {
-  @apply relative flex justify-center items-center gap-4 rounded-xl bg-teal-700 text-center py-3 px-5 text-slate-100 hover:text-teal-100 border border-teal-200;
+  @apply relative flex justify-center items-center gap-4 rounded-xl  text-center py-3 px-5 text-slate-100 hover:text-teal-100 ;
 }
 
-@layer utilities {
-  .css-invert {
-    @apply invert-[50%] brightness-200;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
-    border-radius: 2px;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: #09090a;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #5c5c7b;
-    border-radius: 50px;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #7878a3;
-  }
+.leftsidebar_link.active {
+  @apply text-teal-100 bg-teal-700 border border-teal-200;
 }
+
 
 .hospital_profile{
   @apply bg-teal-900 flex border-b-4 border-teal-400;
@@ -295,7 +286,7 @@ body{
 }
 
 .main_profile{
-  @apply flex justify-start items-center gap-10 w-full p-10 rounded-3xl max-lg:flex-col;
+  @apply flex justify-start items-center gap-10 w-full p-10 rounded-3xl max-lg:flex-col ;
 }
 
 .main_profile > div:nth-child(1){
@@ -334,7 +325,7 @@ body{
 }
 
 .h_p_nav li{
-  @apply bg-teal-600 text-slate-900 mx-4 p-0.5 border-teal-500 rounded-2xl;
+  @apply bg-teal-600 text-slate-900 mx-4 p-0.5 border-teal-500 rounded-2xl cursor-pointer;
 }
 
 .h_p_nav li div {
@@ -402,7 +393,7 @@ body{
 }
 
 #reviews > div:last-child > div {
-  @apply p-2 rounded-2xl hover:bg-teal-600 w-full text-center flex justify-center items-center hover:text-slate-100;
+  @apply p-2 rounded-2xl hover:bg-teal-600 w-full text-center flex justify-center items-center hover:text-slate-100 cursor-pointer;
 }
 
 .filters {
@@ -445,17 +436,31 @@ body{
 }
 
 .search-section {
-  @apply flex justify-between items-center w-full bg-teal-900 h-[230px] overflow-hidden;
+  @apply flex justify-around items-center w-full bg-teal-900;
 }
+
+.search-section > div:nth-child(1), .search-section > div:nth-child(3){
+  @apply w-[13%] max-md:hidden;
+}
+
+.search-section > div:nth-child(2) {
+  @apply w-[65%];
+}
+
 .search-section img {
   @apply h-36;
 }
 .search-bar {
-  @apply flex justify-center items-center flex-wrap gap-2.5 bg-[#7baeae] px-[50px] py-10 rounded-[10px] scale-90;
+  @apply w-full flex !justify-center !items-center flex-wrap gap-2.5 bg-[#7baeae] px-[50px] py-10 rounded-[10px] scale-90;
 }
+
+.search-bar div{
+  @apply flex flex-wrap !justify-center !items-center gap-5;
+}
+
 .search-bar1,
 .search-bar2 {
-  @apply bg-[white] w-[350px] flex justify-center items-center ml-2.5 px-2.5 py-0 rounded-[10px];
+  @apply bg-[white] w-full flex justify-center items-center ml-2.5 px-2.5 py-0 rounded-[10px];
 }
 .search-bar1 input,
 .search-bar2 input {
@@ -469,7 +474,7 @@ body{
   @apply text-[black];
 }
 .search-btn {
-  @apply bg-[#20BB9B] text-[1.1rem] text-[white] absolute bottom-[-15px] transition-all duration-[0.5s] ease-[ease] cursor-pointer px-5 py-2 rounded-[10px] border-[none] left-[420px] active:scale-105;
+  @apply bg-[#20BB9B] text-[1.1rem] text-[white] bottom-[-15px] transition-all duration-[0.5s] ease-[ease] cursor-pointer px-5 py-2 rounded-[10px] border-[none] left-[420px] active:scale-105;
   outline: none;
 }
 
@@ -482,56 +487,9 @@ body{
   @apply w-full flex justify-start items-start border-b-4 border-teal-400;
 }
 
-.doctor-cards {
-  @apply w-full flex flex-col justify-center items-center gap-10 mt-[50px];
-}
-.main-card {
-  @apply flex flex-col w-fit bg-[white] rounded-[10px] border-2 border-solid border-[black] border-[none];
-}
-.upper-section {
-  @apply flex gap-2.5;
-}
-.doctor-pic {
-  @apply flex justify-center items-center relative h-[200px] w-[300px];
-}
-.doctor-img {
-  @apply h-[150px] w-[200px] rounded-[5px];
-}
-.doctor-img img {
-  @apply h-[150px] w-[200px] rounded-[5px];
-}
-.doctor-verify {
-  @apply absolute rounded-[25px] right-2.5 top-[15px];
-}
-.doctor-verify img {
-  @apply h-[30px] rounded-[25px];
-}
-.doctor-detail {
-  @apply flex flex-col justify-center;
-}
-.doctor-detail h2 {
-  @apply text-[color:var(--var1)] text-[1.2rem];
-}
-.detail {
-  @apply text-[0.9rem] flex flex-col;
-}
-.address {
-  @apply mt-2.5;
-}
-.address p {
-  @apply w-[70%];
-}
-.fees {
-  @apply mt-2.5;
-}
-.main-card hr {
-  @apply bg-[color:var(--var3)] h-0.5 w-[90%] border-[none];
-}
-.hr- {
-  @apply flex justify-center items-center;
-}
+
 .lower-section {
-  @apply flex justify-between items-center m-2.5;
+  @apply w-full flex justify-between items-center m-2.5 px-10;
 }
 .lower-section a {
   @apply no-underline text-[color:var(--var1)] text-base;
@@ -545,11 +503,24 @@ body{
 }
 
 .cardholder{
-  @apply flex justify-center items-center flex-col w-[inherit];
+  @apply flex justify-center items-center flex-col w-full bg-teal-900;
 }
 
+
 .cardsplace{
-  @apply flex justify-center items-center w-full flex-col pb-5;
+  @apply w-full flex flex-col justify-start items-center gap-10 md:p-10 py-10;
+}
+
+.cardsplace div {
+  @apply  bg-white rounded-3xl;
+}
+
+.cardbox{
+  @apply flex justify-center items-center flex-col w-[inherit] bg-teal-900 max-md:scale-75;
+}
+
+.cardbox > div:nth-child(2) {
+  @apply content-[""] rounded w-[90%] h-1 bg-teal-400 opacity-25;
 }
 
 .details span {
@@ -576,4 +547,108 @@ body{
 }
 .surgery-img img {
   @apply border-[color:var(--var1)] h-[120px] w-[120px] rounded-[50%] border-2 border-solid;
+}
+
+.serv_holder{
+  @apply flex justify-center items-center w-full gap-5 px-14 h-[28rem] max-md:h-full max-md:flex-col;
+}
+
+.serv_card {
+  @apply flex flex-col items-center relative w-full h-full bg-teal-600 text-white rounded-xl;
+}
+.serv_card-image {
+  @apply absolute top-[-60px];
+}
+
+.serv_card-box{
+  @apply h-full flex flex-col justify-between items-center gap-2.5 py-5;
+}
+
+.serv_card-content {
+  @apply w-full h-[70%] flex flex-col justify-start items-center gap-2.5 mt-[100px];
+}
+.serv_card-content2 {
+  @apply w-full h-[30%] flex flex-col justify-center items-center gap-2.5;
+}
+.serv_card-content h2 {
+  @apply text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg;
+}
+.serv_card-content > div:nth-child(2) {
+  @apply w-full flex justify-center items-center;
+}
+.serv_card-content p {
+  @apply w-[70%] text-center font-light text-xl max-lg:text-lg max-md:text-sm max-sm:text-xs;
+}
+.serv_card a {
+  @apply no-underline text-[#77e3e3] text-[1.2rem];
+}
+.serv_card button {
+  @apply bg-[#20BB9B] text-[white] px-5 py-[5px] rounded-[25px] border-[none] right-[50px] bottom-[30px];
+  outline: none;
+}
+.serv_card button a {
+  @apply text-inherit;
+}
+
+.bloodtype {
+  @apply bg-white w-full mx-auto my-5 p-[15px] rounded-[10px];
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.bloodheading {
+  @apply m-5 text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg;
+}
+.types {
+  @apply flex flex-row justify-around m-5 flex-wrap;
+}
+/* .Group {
+  @apply text-center h-[30px] w-[50px] p-[5px] rounded-[20px] border-[#000000] border-solid border-[1px];
+} */
+.Group {
+  @apply  text-xl max-lg:text-lg max-md:text-sm max-sm:text-xs text-slate-900 cursor-pointer m-1 border p-2 border-teal-500 rounded-3xl;
+}
+.bloodcontainer {
+  @apply max-w-[800px] bg-[#f9f9f9] shadow-[0_0_10px_rgba(0,0,0,0.1)] mx-auto my-0 p-5 rounded-[10px];
+}
+.bloodcontainer label,
+.bloodcontainer input,
+.bloodcontainer select {
+  @apply block mb-2.5;
+}
+.bloodcontainer input,
+.bloodcontainer select {
+  @apply w-full border p-2.5 rounded-[5px] border-solid border-[#ccc];
+}
+.form-group {
+  @apply mb-2.5;
+}
+.split {
+  @apply inline-block w-[calc(50%_-_5px)] box-border;
+}
+.popup {
+  @apply fixed -translate-x-2/4 -translate-y-2/4 bg-[#fefefe] border shadow-[0_4px_8px_rgba(0,0,0,0.1)] z-[1] max-w-[300px] text-center p-5 border-solid border-[#ccc] left-2/4 top-2/4;
+}
+.section-container {
+  @apply flex justify-between items-center h-auto;
+}
+.popup-content {
+  @apply text-center;
+}
+.close-popup {
+  @apply cursor-pointer text-xl font-[bold] bg-[#0C4D46] m-2.5 p-[5px] rounded-[30%] border-[#000000] border-solid border-[1] hover:text-white;
+  float: center;
+}
+.poptext {
+  @apply m-5;
+}
+@media (max-width: 768px) {
+  label,
+  input,
+  select {
+    @apply w-full;
+  }
+}
+
+.bloodcontainer h2{
+  @apply text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg;
 }
