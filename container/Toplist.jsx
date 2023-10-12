@@ -1,5 +1,6 @@
 import Topcard from "@/components/Topcard";
 import { servicies } from "@/assets/data";
+import Image from "next/image";
 
 const Toplist = () => {
   return (
@@ -9,10 +10,14 @@ const Toplist = () => {
         <Topcard type="doctor" />
         <div className="serv_holder">
           {servicies.map((serv) => (
-            <div className="serv_card">
+            <div className="serv_card" key={serv}>
               <div className="serv_card-image">
-                {/* <img src="service.svg" alt=""> */}
-                {serv.img}
+                <Image
+                  src={serv.img}
+                  alt={serv.title}
+                  width={120}
+                  height={30}
+                />
               </div>
               <div className="serv_card-box">
                 <div className="serv_card-content">

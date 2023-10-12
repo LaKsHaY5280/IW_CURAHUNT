@@ -4,7 +4,7 @@ import Toplist from "@/container/Toplist";
 
 export default function Home() {
   return (
-    <main>
+    <main className="home">
       <Header />
       <Toplist />
       <Faq />

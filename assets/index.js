@@ -35,6 +35,10 @@ import piles from "./images/piles.png";
 import pilo from "./images/pilo.png";
 import seb from "./images/seb.png";
 import vari from "./images/vari.png";
+import bot from "./images/bot.svg";
+import blood from "./images/blood.svg";
+import consalt from "./images/consalt.svg";
+import surgeries from "./images/surgeries.png";
 
 export {
   logo,
@@ -74,4 +78,8 @@ export {
   pilo,
   seb,
   vari,
+  bot,
+  blood,
+  consalt,
+  surgeries,
 };

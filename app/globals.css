@@ -15,6 +15,14 @@ main{
   @apply border-b-4 border-teal-400;
 }
 
+.home, body > div:nth-child(2), body > section:nth-child(2)  {
+  @apply mt-16 lg:mt-24;
+}
+
+.navclass{
+  @apply fixed w-full bg-white z-10 -mt-16 lg:-mt-24;
+}
+
 .search {
     @apply bg-teal-900 flex justify-around items-center gap-10 max-md:p-5;
 }
@@ -265,7 +273,7 @@ main{
 
 
 .leftsidebar {
-  @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-hidden  pb-5 pt-5 max-md:hidden bg-teal-900 ;
+  @apply sticky left-0 lg:top-[99px] top-[59px] z-20 flex h-screen w-fit flex-col justify-between overflow-hidden  pb-5 pt-5 max-md:hidden bg-teal-900 ;
 }
 
 .leftsidebar_link {
@@ -550,11 +558,11 @@ main{
 }
 
 .serv_holder{
-  @apply flex justify-center items-center w-full gap-5 px-14 h-[28rem] max-md:h-full max-md:flex-col;
+  @apply flex justify-center items-center w-full gap-5 mt-10 px-14 h-[28rem] max-md:h-full max-md:flex-col;
 }
 
 .serv_card {
-  @apply flex flex-col items-center relative w-full h-full bg-teal-600 text-white rounded-xl;
+  @apply flex flex-col items-center relative w-full h-full bg-teal-600 text-white rounded-xl max-md:my-12;
 }
 .serv_card-image {
   @apply absolute top-[-60px];

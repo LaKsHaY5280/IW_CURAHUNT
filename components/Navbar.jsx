@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className=" navclass">
       <div className="  p-3 flex flex-1 justify-center items-center max-[500px]:p-2 ">
         <div className=" flex flex-1 justify-between items-center">
           <div className=" flex justify-start items-center">

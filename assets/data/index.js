@@ -74,30 +74,32 @@ export const sidebarLinksdl = [
   },
 ];
 
+import { bot, blood, consalt, surgeries } from "@/assets";
+
 export const servicies = [
   {
-    img: "",
+    img: blood,
     title: "Blood Bank",
     desc: "A single drop of blood can make a huge difference",
     know: "Know more !",
     btn: "Find",
   },
   {
-    img: "",
+    img: surgeries,
     title: "Surgeries",
     desc: "You are in a professional's hand so don't worry keep patience and everything will be fine",
     know: "Know more !",
     btn: "Book Now",
   },
   {
-    img: "",
+    img: consalt,
     title: "Consultancy",
     desc: "Feel free to ask everything",
     know: "Know more !",
     btn: "Book Now",
   },
   {
-    img: "",
+    img: bot,
     title: "AI chat bots",
     desc: "Ask anything",
     know: "Know more !",
