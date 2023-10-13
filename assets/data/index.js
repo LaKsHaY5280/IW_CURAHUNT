@@ -15,6 +15,10 @@ export const navlinks = [
     url: "/BloodDonationForm",
     label: "Blood Bank",
   },
+  {
+    url: "/remedies",
+    label: "Remedies",
+  },
 ];
 
 export const sidebarLinks = [

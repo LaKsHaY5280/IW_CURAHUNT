@@ -11,13 +11,6 @@ const nextconfig = {
       "drive.google.com",
     ],
   },
-  rules: [
-    // ...
-    {
-      test: /\.svg$/,
-      use: ["file-loader"],
-    },
-  ],
 };
 
 module.exports = nextconfig;

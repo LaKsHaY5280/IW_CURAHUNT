@@ -39,6 +39,21 @@ import bot from "./images/bot.svg";
 import blood from "./images/blood.svg";
 import consalt from "./images/consalt.svg";
 import surgeries from "./images/surgeries.png";
+import logosvg from "./images/logosvg.svg";
+// import hp from "./images/hp.jpg";
+// import Group1 from "./images/Group1.svg";
+import image5 from "./images/image5.png";
+import image6 from "./images/image6.png";
+import image14 from "./images/image14.svg";
+import Mask1 from "./images/Mask1.png";
+import Mask2 from "./images/Mask2.png";
+import Mask3 from "./images/Mask3.png";
+import Maskgroup from "./images/Maskgroup.png";
+import remimage1 from "./images/remimage1.svg";
+import remimage2 from "./images/remimage2.png";
+import remimage3 from "./images/remimage3.png";
+import remimage4 from "./images/remimage4.jpg";
+import remimage5 from "./images/remimage5.png";
 
 export {
   logo,
@@ -82,4 +97,19 @@ export {
   blood,
   consalt,
   surgeries,
+  logosvg,
+  // hp,
+  // Group1,
+  image5,
+  image6,
+  image14,
+  Mask1,
+  Mask2,
+  Mask3,
+  Maskgroup,
+  remimage1,
+  remimage2,
+  remimage3,
+  remimage4,
+  remimage5,
 };

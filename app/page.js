@@ -1,4 +1,5 @@
 import Faq from "@/components/Faq";
+import Loader from "@/components/loader";
 import Header from "@/container/Header";
 import Toplist from "@/container/Toplist";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Toplist />
       <Faq />
+      {/* <Loader /> */}
     </main>
   );
 }

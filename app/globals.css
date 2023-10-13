@@ -15,12 +15,28 @@ main{
   @apply border-b-4 border-teal-400;
 }
 
-.home, body > div:nth-child(2), body > section:nth-child(2)  {
-  @apply mt-16 lg:mt-24;
+.loadingsvg{
+  @apply !animate-spin;
 }
 
-.navclass{
-  @apply fixed w-full bg-white z-10 -mt-16 lg:-mt-24;
+.loading svg polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+  fill: none;
+  stroke: #ff4d5033;
+}
+
+.loading svg polyline#front {
+  fill: none;
+  stroke: #ff4d4f;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash-682 1.4s linear infinite;
 }
 
 .search {
@@ -167,7 +183,7 @@ main{
 
 
 .app__footer {
-    @apply w-full relative z-[1] flex justify-start items-center flex-col pt-0 bg-teal-950 text-slate-300;
+    @apply w-full relative z-[1] flex justify-start items-center flex-col pt-0 bg-teal-950 text-slate-300  border-t-4 border-teal-400;
 }
 
 .app__footer-links {
@@ -273,7 +289,7 @@ main{
 
 
 .leftsidebar {
-  @apply sticky left-0 lg:top-[99px] top-[59px] z-20 flex h-screen w-fit flex-col justify-between overflow-hidden  pb-5 pt-5 max-md:hidden bg-teal-900 ;
+  @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-hidden  pb-5 pt-5 max-md:hidden bg-teal-900 ;
 }
 
 .leftsidebar_link {
@@ -659,4 +675,90 @@ main{
 
 .bloodcontainer h2{
   @apply text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg;
+}
+
+.Remediesimage {
+  @apply flex justify-center items-center bg-cover;
+}
+.Remediesimage img {
+  @apply max-w-full h-auto flex;
+}
+.remediesheading {
+  @apply text-center text-[#0c4c47] m-5 font-bold text-3xl max-lg:text-xl max-md:text-sm max-sm:text-xs;
+}
+/* main section styling */
+.Remediesheaderheader {
+  @apply flex justify-around bg-[#0c4c47] m-[30px];
+}
+.split {
+  @apply w-full flex;
+}
+.split1 {
+  @apply flex justify-center items-center w-full;
+}
+.split2 {
+  @apply h-[300px] w-full object-cover;
+}
+.split2 img {
+  @apply w-full object-cover h-[300px];
+}
+.split1 h2 {
+  @apply text-[2rem] text-[white] text-center;
+}
+/*ingredients section stlying*/
+.Ingredients {
+  @apply flex justify-around items-start mx-0 my-5;
+}
+.ingredients1 {
+  @apply flex flex-col gap-10 bg-[#0c4c47] text-[white] h-[1000px] w-6/12 ml-[30px] mb-5 p-5 mr-5;
+  /* max-width: calc(50% - 20px); */
+}
+.firsthead {
+  @apply font-[bold];
+}
+.secondhead {
+  @apply flex flex-col justify-between gap-5 ml-[15px];
+}
+.secondhead div h3 {
+  @apply font-[lighter] mb-2.5;
+}
+.secondhead div ul {
+  @apply ml-[30px];
+}
+/*ingredients section stylinf end here*/
+.remediesinformation {
+  @apply bg-white text-black mr-5 mb-5 p-5;
+  /* max-width: calc(50% - 20px); */
+}
+.steps {
+  @apply flex;
+}
+.steps div {
+  @apply m-[30px];
+}
+hr {
+  @apply w-2/5;
+}
+.steps1 {
+  @apply justify-center items-center m-5;
+}
+.inimage img {
+  @apply h-28;
+}
+/*notesection styling*/
+.note {
+  @apply w-full flex justify-center;
+}
+.notetext {
+  @apply p-5;
+}
+/* note section styling end here*/
+/*main section styling end here*/
+
+.remline{
+  @apply content-[""] rounded w-3/4 h-1 bg-teal-400 opacity-25;
+}
+
+.rem{
+  @apply mb-5;
 }
