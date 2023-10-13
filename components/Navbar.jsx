@@ -26,7 +26,7 @@ const Navbar = () => {
               width={110}
               height={110}
               onClick={handleImageClick}
-              className=" -mt-2 "
+              className=" -mt-2 cursor-pointer "
             />
           </div>
         </div>

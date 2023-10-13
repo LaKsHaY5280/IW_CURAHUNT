@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Star } from "lucide-react";
 import Infocard from "@/components/Infocard";
+import Loader from "@/components/Loader";
 
 const page = ({ data }) => {
   // const router = useRouter();
@@ -67,7 +68,7 @@ const page = ({ data }) => {
               </div>
             </>
           ) : (
-            <p>Loading...</p>
+            <Loader />
           )}
         </div>
         <div className="h_p_nav" id="overview">

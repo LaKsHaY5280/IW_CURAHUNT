@@ -18,7 +18,9 @@ main{
 .loadingsvg{
   @apply !animate-spin;
 }
-
+.loading{
+  @apply !bg-transparent;
+}
 .loading svg polyline {
   fill: none;
   stroke-width: 3;
@@ -81,7 +83,11 @@ main{
 
 .list > div > h2 {
     @apply text-4xl px-5 font-bold py-2 max-w-full;
-  }   
+  }
+   
+.list > div:nth-child(1),.list > div:nth-child(2){
+  @apply w-full;
+}
 
 .list > div:nth-child(3){
   @apply flex justify-center items-center gap-5;
@@ -714,13 +720,13 @@ main{
   /* max-width: calc(50% - 20px); */
 }
 .firsthead {
-  @apply font-[bold];
+  @apply font-bold;
 }
 .secondhead {
   @apply flex flex-col justify-between gap-5 ml-[15px];
 }
 .secondhead div h3 {
-  @apply font-[lighter] mb-2.5;
+  @apply font-light mb-2.5;
 }
 .secondhead div ul {
   @apply ml-[30px];

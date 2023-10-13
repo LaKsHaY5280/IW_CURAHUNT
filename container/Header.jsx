@@ -10,7 +10,7 @@ const Header = () => {
           <Image src={doctors} alt=" doctors" width={200} height={200} />
         </div>
         <div className=" search_container">
-          <h1>"Find the best doctors and hospitals"</h1>
+          <h1>"Find the best Doctors and Hospitals"</h1>
           <div>
             <div className=" map">
               <MapPin

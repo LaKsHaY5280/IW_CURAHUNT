@@ -1,6 +1,6 @@
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center loadingsvg !animate-spin">
+    <div className="flex justify-center items-center loadingsvg w-full h-20 !animate-spin">
       <div class="loading">
         <svg width="64px" height="48px">
           <polyline

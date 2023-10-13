@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { ShieldCheck, Star } from "lucide-react";
 import Infocard from "@/components/Infocard";
 import { getDoctorData } from "@/lib/actions/Doctors.actions";
+import Loader from "@/components/Loader";
 
 const page = ({ data }) => {
   // const router = useRouter();
@@ -76,7 +77,7 @@ const page = ({ data }) => {
               </div>
             </>
           ) : (
-            <p>Loading...</p>
+            <Loader />
           )}
         </div>
         <div className="h_p_nav" id="overview">
