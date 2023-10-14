@@ -566,18 +566,69 @@ main{
 .surgery-list-heading span {
   @apply text-[2rem] text-[color:var(--var1)];
 }
-.surgery-img {
-  @apply flex justify-center items-center flex-wrap w-[60%] gap-14;
+
+.surgery-contain{
+  @apply w-full;
 }
-.surgery_image {
-  @apply flex flex-col justify-center items-center gap-[5px];
+
+.surcard{
+  @apply flex w-full h-full justify-center items-center max-md:flex-col;
 }
-.surgery_image span {
-  @apply text-[1.3rem] text-[color:var(--var1)];
+
+.surcard > div:nth-child(1){
+  @apply flex w-2/6 h-full justify-center items-center flex-col max-md:w-4/5;
 }
-.surgery-img img {
-  @apply border-[color:var(--var1)] h-[120px] w-[120px] rounded-[50%] border-2 border-solid;
+
+.surcard > div:nth-child(2){
+  @apply flex w-4/6 h-full justify-center items-center flex-col;
 }
+
+.surcard > div:nth-child(1) > img{
+  @apply rounded-full w-2/6 h-2/6;
+}
+
+.surcard > div:nth-child(1) > span{
+  @apply font-bold text-3xl max-lg:text-xl max-md:text-lg max-sm:text-sm;
+}
+.surcard > div:nth-child(2) > div{
+  @apply font-normal;
+}
+.surcard > div:nth-child(2) > div:nth-child(2){
+  @apply mt-5 flex w-full h-full justify-end items-center;
+}
+.vdbtn{
+  @apply h-full p-3 bg-teal-400 border border-teal-500 rounded-2xl;
+}
+
+.surline{
+  @apply content-[""] rounded w-2/6 h-1 my-5 bg-teal-50 opacity-25;
+}
+.surlinea{
+  @apply content-[""] rounded w-2/6 h-0.5 bg-teal-500 opacity-75;
+}
+.surlineb{
+  @apply content-[""] rounded w-4/6 h-0.5 bg-teal-500 opacity-75;
+}
+
+.surd{
+  @apply flex w-full h-full justify-center items-start m-5 flex-col ;
+}
+
+.surd_block{
+  @apply flex w-full h-full justify-end items-start gap-5 py-5;
+}
+.surd_block > div:nth-child(1){
+  @apply flex w-1/6 h-full justify-center items-center flex-col gap-5;
+}
+.surd_block > div:nth-child(2){
+  @apply flex w-5/6 h-full justify-center items-start flex-col gap-5;
+}
+
+
+
+
+
+
 
 .serv_holder{
   @apply flex justify-center items-center w-full gap-5 mt-10 px-14 h-[28rem] max-md:h-full max-md:flex-col;

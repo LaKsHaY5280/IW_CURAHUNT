@@ -43,7 +43,7 @@ const page = ({ data }) => {
               <div>
                 <Image
                   src={hospitalData.p_img}
-                  alt="profile"
+                  alt={hospitalData.name}
                   width={100}
                   height={100}
                 />
