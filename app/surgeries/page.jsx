@@ -33,7 +33,10 @@ export default function SurgeryList() {
       </div>
       <div className="surgery-contain" id="surgery-list">
         {doctors.map((item, index) => (
-          <div key={index} className="mb-6 flex w-full flex-col items-center justify-between">
+          <div
+            key={index}
+            className="mb-6 flex w-full flex-col items-center justify-between"
+          >
             <div
               className={` flex w-fit items-center justify-between mx-5 py-4 bg-teal-600 text-white rounded-t-lg`}
             >
@@ -75,7 +78,7 @@ export default function SurgeryList() {
               <div className="surd">
                 <div className="surd_block">
                   <div>
-                    <div>time</div> <span className="surlinea" />
+                    <div>Recovery Time</div> <span className="surlinea" />
                   </div>
                   <div>
                     <div>{item.time}</div> <span className="surlineb" />
@@ -83,7 +86,7 @@ export default function SurgeryList() {
                 </div>
                 <div className="surd_block">
                   <div>
-                    <div>risk</div> <span className="surlinea" />
+                    <div>Risk</div> <span className="surlinea" />
                   </div>
                   <div>
                     <div>{item.risk}</div> <span className="surlineb" />
@@ -91,7 +94,7 @@ export default function SurgeryList() {
                 </div>
                 <div className="surd_block">
                   <div>
-                    <div>cost</div> <span className="surlinea" />
+                    <div>Average Cost</div> <span className="surlinea" />
                   </div>
                   <div>
                     <div>{item.cost}</div> <span className="surlineb" />
