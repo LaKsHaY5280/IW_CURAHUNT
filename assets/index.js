@@ -40,8 +40,6 @@ import blood from "./images/blood.svg";
 import consalt from "./images/consalt.svg";
 import surgeries from "./images/surgeries.png";
 import logosvg from "./images/logosvg.svg";
-// import hp from "./images/hp.jpg";
-// import Group1 from "./images/Group1.svg";
 import image5 from "./images/image5.png";
 import image6 from "./images/image6.png";
 import image14 from "./images/image14.svg";
@@ -54,6 +52,14 @@ import remimage2 from "./images/remimage2.png";
 import remimage3 from "./images/remimage3.png";
 import remimage4 from "./images/remimage4.jpg";
 import remimage5 from "./images/remimage5.png";
+import CeeDee from "./images/CeeDee.jpg";
+import DrLalPathlabs from "./images/DrLalPathlabs.jpg";
+import DrLalPathlabs2 from "./images/DrLalPathlabs2.jpg";
+import labhunt from "./images/labhunt.jpg";
+import MaxLab from "./images/MaxLab.jpg";
+import MyLab from "./images/MyLab.jpg";
+import RedcliffeLabs from "./images/RedcliffeLabs.webp";
+import ShikhaPathLab from "./images/ShikhaPathLab.jpg";
 
 export {
   logo,
@@ -98,8 +104,6 @@ export {
   consalt,
   surgeries,
   logosvg,
-  // hp,
-  // Group1,
   image5,
   image6,
   image14,
@@ -112,4 +116,12 @@ export {
   remimage3,
   remimage4,
   remimage5,
+  CeeDee,
+  DrLalPathlabs,
+  DrLalPathlabs2,
+  labhunt,
+  MaxLab,
+  MyLab,
+  RedcliffeLabs,
+  ShikhaPathLab,
 };

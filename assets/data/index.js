@@ -12,6 +12,10 @@ export const navlinks = [
     label: "Surgeries",
   },
   {
+    url: "/lab",
+    label: "Labs",
+  },
+  {
     url: "/BloodDonationForm",
     label: "Blood Bank",
   },
